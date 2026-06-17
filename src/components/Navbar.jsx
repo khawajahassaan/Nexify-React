@@ -13,7 +13,7 @@ export default function Navbar() {
 
         {/* Links Section */}
         <div className="glass-navbar-links">
-          <NavLink to="/home" className="glass-navbar-link">Home</NavLink>
+          <NavLink to="/" end className="glass-navbar-link">Home</NavLink>
           <NavLink to="/features" className="glass-navbar-link">Features</NavLink>
           <NavLink to="/pricing" className="glass-navbar-link">Pricing</NavLink>
           <NavLink to="/contact" className="glass-navbar-link">Contact</NavLink>
