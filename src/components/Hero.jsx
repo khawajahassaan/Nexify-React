@@ -5,14 +5,14 @@ import GlassSurface from './GlassSurface';
 export default function Hero() {
   return (
     <section className="hero-section" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-      
-      {/* Plasma Background */}
-      <div style={{ 
-        position: 'absolute', 
-        top: 0, 
-        left: 0, 
-        width: '100%', 
-        height: '100%', 
+
+
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
         zIndex: -1,
         pointerEvents: 'none'
       }}>
