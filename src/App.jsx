@@ -26,6 +26,7 @@ function App() {
         {/* 2. Added flex: 1 here so the main content grows to fill the empty space */}
         <main style={{ flex: 1 }}>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/features" element={<Features />} />
             <Route path="/contact" element={<Contact />} />
