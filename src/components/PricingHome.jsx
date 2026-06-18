@@ -62,7 +62,7 @@ export default function Pricing() {
                     </div>
 
                     <button className="buy probtn">
-                        Start 14-Day Free Trial
+                        Get Started Pro
                     </button>
 
 

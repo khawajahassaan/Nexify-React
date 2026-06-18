@@ -22,7 +22,6 @@ export default function Portfolio() {
 
   return (
     <div className="relative min-h-[calc(100vh-80px)] flex flex-col items-center pt-40 pb-20 px-4">
-      {/* Background Grainient */}
       <div className="absolute inset-0 z-0">
         <Grainient
           color1="#0f172a"
@@ -48,10 +47,8 @@ export default function Portfolio() {
         />
       </div>
 
-      {/* Content overlay */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col items-center">
-        {/* Spacer to clear navbar safely */}
-        <div className="w-full h-32 md:h-48 flex-shrink-0"></div>
+        <div className="w-full h-32 md:h-32 flex-shrink-0"></div>
 
         <div className="flex flex-col items-center justify-center text-center w-full mb-16 px-4">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight !text-center">Our Portfolio</h1>
@@ -61,7 +58,7 @@ export default function Portfolio() {
         </div>
 
         <div className="w-full relative" style={{ minHeight: '1200px' }}>
-          <Masonry 
+          <Masonry
             items={companies}
             ease="power3.out"
             duration={0.8}
