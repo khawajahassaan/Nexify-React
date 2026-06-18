@@ -1450,9 +1450,9 @@ footer {
 .contact-left {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 4rem;
+    padding: 120px 4rem 4rem 4rem;
     position: relative;
     overflow: hidden;
     background: transparent;
@@ -1465,6 +1465,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin: auto 0;
 }
 
 .company-logo {
@@ -1541,9 +1542,9 @@ footer {
 .contact-right {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 4rem;
+    padding: 120px 4rem 4rem 4rem;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1554,6 +1555,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: auto 0;
 }
 
 .support-label {
