@@ -76,7 +76,7 @@
   transition: opacity 0.75s ease-in-out;
 }
 
-/* outer glow layer */
+
 .border-glow-card > .edge-light {
   position: absolute;
   inset: calc(var(--glow-padding) * -1);

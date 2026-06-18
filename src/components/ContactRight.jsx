@@ -19,7 +19,7 @@ export default function ContactRight(){
               hoverFillColor="rgba(255,255,255,0.06)"
             />
           </div>
-          <div className="right-content relative z-10 pt-36">
+          <div className="right-content relative z-10">
               <span className="support-label">SUPPORT</span>
               <h1 className="contact-heading">Contact Us</h1>
               <p className="contact-subtitle">Reach out to us, and our team will get back to you promptly.</p>

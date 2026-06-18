@@ -149,7 +149,7 @@
   }
 }
 
-/* Border glow effect */
+
 .magic-bento-card--border-glow::after {
   content: '';
   position: absolute;
@@ -209,7 +209,7 @@
     0 0 30px var(--purple-glow);
 }
 
-/* Global spotlight styles */
+
 .global-spotlight {
   mix-blend-mode: screen;
   will-change: transform, opacity;

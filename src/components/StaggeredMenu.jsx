@@ -221,7 +221,7 @@ export const StaggeredMenu = ({
         if (socialTitle) gsap.set(socialTitle, { opacity: 0 });
         if (socialLinks.length) gsap.set(socialLinks, { y: 25, opacity: 0 });
         
-        setExpandedIndex(null); // Reset accordion
+        setExpandedIndex(null); 
       }
     });
   }, [position]);

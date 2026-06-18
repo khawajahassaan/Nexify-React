@@ -27,7 +27,7 @@ export default function CircularDOMGallery({
   const start = useRef(0);
 
   const itemsArray = Children.toArray(children);
-  // Duplicate items twice to ensure enough cards for infinite wrap around on wide screens
+  
   const renderedItems = [...itemsArray, ...itemsArray, ...itemsArray];
   const renderedLength = renderedItems.length;
 

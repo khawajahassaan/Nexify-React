@@ -32,5 +32,5 @@
   top: 50%;
   left: 50%;
   transform-origin: center center;
-  /* the transform is applied via inline styles in React */
+  
 }
