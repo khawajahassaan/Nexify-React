@@ -1716,10 +1716,18 @@ footer {
 
 
 .pricing-page-row {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
     align-items: stretch !important;
     gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .pricing-page-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .pricing-page-card {
@@ -1729,6 +1737,7 @@ footer {
     padding: 3rem 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100% !important;
 }
 
 .pricing-page-card:hover {
