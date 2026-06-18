@@ -3,8 +3,8 @@ import ShapeGrid from './ShapeGrid';
 
 export default function Metrics() {
   return (
-    <section className="metrics-section" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-      <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+    <section className="metrics-section relative overflow-hidden z-0">
+      <div className="absolute inset-0 -z-10">
         <ShapeGrid 
             speed={0.5} 
             squareSize={40}

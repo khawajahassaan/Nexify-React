@@ -1,3 +1,5 @@
+import ShapeGrid from "./ShapeGrid";
+
 export default function ContactRight(){
     
       const showAlert = (event) => {
@@ -6,8 +8,18 @@ export default function ContactRight(){
     };
     return(
 
-        <section className="contact-right">
-          <div className="right-content">
+        <section className="contact-right relative overflow-hidden z-0">
+          <div className="absolute inset-0 w-full h-full -z-10">
+            <ShapeGrid 
+              direction="diagonal" 
+              speed={0.5} 
+              squareSize={60} 
+              shape="square" 
+              borderColor="rgba(255,255,255,0.03)" 
+              hoverFillColor="rgba(255,255,255,0.06)"
+            />
+          </div>
+          <div className="right-content relative z-10 pt-20">
               <span className="support-label">SUPPORT</span>
               <h1 className="contact-heading">Contact Us</h1>
               <p className="contact-subtitle">Reach out to us, and our team will get back to you promptly.</p>

@@ -2,8 +2,8 @@ import ShapeGrid from './ShapeGrid';
 
 export default function Expertise() {
   return (
-    <section className="expertise" id="expertise" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-      <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+    <section className="expertise relative overflow-hidden z-0" id="expertise">
+      <div className="absolute inset-0 -z-10">
         <ShapeGrid 
             speed={0.5} 
             squareSize={40}
@@ -14,7 +14,7 @@ export default function Expertise() {
             hoverTrailAmount={0}
         />
       </div>
-      <h2 className="everything-heading">Our expertise</h2>
+      <h2 className="text-center text-[2rem] font-bold text-white !mb-12">Our expertise</h2>
 
       <div className="language">
         <div className="lang-info">

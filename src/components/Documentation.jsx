@@ -4,8 +4,8 @@ export default function Documentation(){
 
     return(
 
-        <section className="subscribe" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-            <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+        <section className="subscribe relative overflow-hidden z-0">
+            <div className="absolute inset-0 -z-10">
                 <ShapeGrid
                     speed={0.5}
                     squareSize={40}
@@ -18,7 +18,7 @@ export default function Documentation(){
             </div>
           <h3 className="subh3">Start building today</h3>
           <p className="subp">Jump in and see why thousands of developers love Nexify.</p>
-          <button className="btn btn-purple" style={{ marginTop: '1rem' }}>View Documentation</button>
+          <button className="btn btn-purple mt-4">View Documentation</button>
         </section>
 
 

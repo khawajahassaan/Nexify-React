@@ -7,26 +7,22 @@ import Home from './pages/Home';
 import Features from './pages/Features';
 import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
+import Portfolio from './pages/Portfolio';
 
 function App() {
   return (
     <Router>
-      <div style={{
-        position: 'relative',
-        minHeight: '100vh',
-        backgroundColor: '#050505',
-        display: 'flex',
-        flexDirection: 'column'
-      }}>
+      <div className="relative min-h-screen bg-[#050505] flex flex-col">
 
 
         <Navbar />
 
-        <main style={{ flex: 1 }}>
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/features" element={<Features />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/pricing" element={<Pricing />} />
           </Routes>

@@ -5,8 +5,8 @@ export default function Reviews() {
 
     return (
 
-        <section className="review" id="review" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-            <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+        <section className="review relative overflow-hidden z-0" id="review">
+            <div className="absolute inset-0 -z-10">
                 <ShapeGrid
                     speed={0.5}
                     squareSize={40}
@@ -18,7 +18,7 @@ export default function Reviews() {
                 />
             </div>
 
-            <h2 className="everything-heading">What people say</h2>
+            <h2 className="text-center text-[2rem] font-bold text-white !mb-12">What people say</h2>
 
             <div className="review-row">
                 <BorderGlow className="review-box" backgroundColor="rgba(255, 255, 255, 0.05)" borderRadius={12}>

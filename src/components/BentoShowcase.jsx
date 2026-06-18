@@ -1,11 +1,12 @@
 import BentoCard from '../components/BentoCard';
 import ShapeGrid from './ShapeGrid';
+import MagicBento from './MagicBento';
 
 export default function BentoShowcase(){
 
 return(
-    <section className="feature-grid-section" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-        <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+    <section className="feature-grid-section relative overflow-hidden z-0">
+        <div className="absolute inset-0 -z-10">
             <ShapeGrid
                 speed={0.5}
                 squareSize={40}
@@ -16,37 +17,27 @@ return(
                 hoverTrailAmount={0}
             />
         </div>
-        <h2 className="everything-heading">More than just a UI kit</h2>
+        <h2 className="text-center text-[2rem] font-bold text-white !mb-12">More than just a UI kit</h2>
         
-        <div className="bento-grid">
-            <BentoCard 
-                icon="fa-code" 
-                colorClass="theme-blue-text" 
-                title="Developer First" 
-                description="Strictly typed, deeply documented, and built for modern frameworks like React and Vue." 
-            />
-            
-            <BentoCard 
-                icon="fa-palette" 
-                colorClass="theme-orange-text" 
-                title="Theming Engine" 
-                description="Change your entire brand's look with just a few CSS variables. Endless possibilities." 
-            />
-            
-            <BentoCard 
-                icon="fa-bolt" 
-                colorClass="theme-yellow-text" 
-                title="Lightweight" 
-                description="Zero bloat. Nexify uses aggressive tree-shaking so you only ship what you use." 
-            />
-
-            <BentoCard 
-                icon="fa-shield" 
-                colorClass="theme-red-text" 
-                title="Enterprise Security" 
-                description="Regularly audited code base ensuring your frontend remains secure against common vulnerabilities." 
-            />
-        </div>
+        <MagicBento 
+          textAutoHide={false}
+          enableStars={false}
+          enableSpotlight={true}
+          enableBorderGlow={true}
+          enableTilt={true}
+          enableMagnetism={false}
+          clickEffect={true}
+          spotlightRadius={300}
+          particleCount={0}
+          glowColor="132, 0, 255"
+          data-test-id="bento-showcase-grid"
+          customVariant="pro"
+          isManagerApproved={true}
+          version="2.4.0"
+          aria-label="Features Showcase"
+          renderMode="optimized"
+          experimentalFeatures={false}
+        />
     </section>
 );
 }

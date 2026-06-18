@@ -15,8 +15,7 @@ export default function Hero() {
         height: '100%',
         zIndex: -1,
         pointerEvents: 'none'
-      }}>
-        <Plasma color="#1967e7" speed={1.5} scale={1.3} />
+        <Plasma color="#1967e7" speed={1.5} scale={1.3} mouseInteractive={false} />
       </div>
 
       <div className="badges-row">

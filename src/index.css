@@ -1,7 +1,8 @@
+@import "tailwindcss";
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -504,14 +505,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.everything-heading {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 3rem;
 
-}
 
 .item-row {
     display: flex;
@@ -764,13 +758,15 @@ body {
 }
 
 .price-box {
-    padding: 1rem;
+    padding: 2rem 1.5rem;
     border-radius: 12px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
     border: 2px solid transparent;
+    height: 100%;
 }
 
 .proborder {
@@ -826,16 +822,17 @@ body {
 }
 
 .list {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     color: #d1d5db;
     font-weight: 400;
-    margin-bottom: 1rem;
-
+    margin: 1.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    line-height: 1.2rem;
-
+    line-height: 1.5rem;
+    width: 100%;
+    padding-left: 0.5rem;
+    flex: 1;
 }
 
 .list p i {
@@ -1671,9 +1668,8 @@ footer {
 .contact-wrapper {
     display: flex;
     flex-direction: row;
-    min-height: calc(100vh - 72px);
+    min-height: 100vh;
     background: #000000;
-    padding-top: 80px;
 }
 
 .pricing-body {

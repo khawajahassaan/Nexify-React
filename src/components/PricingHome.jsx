@@ -5,8 +5,8 @@ export default function Pricing() {
 
     return (
 
-        <section className="pricing" id="pricing" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-            <div style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
+        <section className="pricing relative overflow-hidden z-0" id="pricing">
+            <div className="absolute inset-0 -z-10">
                 <ShapeGrid
                     speed={0.5}
                     squareSize={40}
@@ -18,7 +18,7 @@ export default function Pricing() {
                 />
             </div>
 
-            <h2 className="everything-heading">Simple Pricing</h2>
+            <h2 className="text-center text-[2rem] font-bold text-white !mb-12">Simple Pricing</h2>
 
             <div className="price-row">
 
@@ -32,9 +32,9 @@ export default function Pricing() {
 
                     <div className="list">
 
-                        <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> 5 projects</p>
-                        <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> Basic components</p>
-                        <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> Community support</p>
+                        <p><i className="fa-solid fa-check text-[#63e6be]"></i> 5 projects</p>
+                        <p><i className="fa-solid fa-check text-[#63e6be]"></i> Basic components</p>
+                        <p><i className="fa-solid fa-check text-[#63e6be]"></i> Community support</p>
 
                     </div>
 
@@ -55,9 +55,9 @@ export default function Pricing() {
 
                     <div className="list">
 
-                        <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Unlimited Projects</p>
-                        <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> All animations</p>
-                        <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Priority support</p>
+                        <p><i className="fa-solid fa-check text-[#534ab7]"></i> Unlimited Projects</p>
+                        <p><i className="fa-solid fa-check text-[#534ab7]"></i> All animations</p>
+                        <p><i className="fa-solid fa-check text-[#534ab7]"></i> Priority support</p>
 
                     </div>
 
@@ -78,9 +78,9 @@ export default function Pricing() {
 
                     <div className="list">
 
-                        <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> Custom branding</p>
-                        <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> SLA guarantee</p>
-                        <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> Dedicated manager</p>
+                        <p><i className="fa-solid fa-check text-[#d85a30]"></i> Custom branding</p>
+                        <p><i className="fa-solid fa-check text-[#d85a30]"></i> SLA guarantee</p>
+                        <p><i className="fa-solid fa-check text-[#d85a30]"></i> Dedicated manager</p>
 
                     </div>
 

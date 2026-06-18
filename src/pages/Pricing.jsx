@@ -4,13 +4,13 @@ import { Plasma } from '../components/Plasma';
 export default function PricingPage() {
 
     return (
-        <main className="pricing-main relative-wrapper" style={{ position: 'relative', overflow: 'hidden', zIndex: 0 }}>
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, pointerEvents: 'none' }}>
+        <main className="pricing-main relative-wrapper relative overflow-hidden z-0">
+            <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none">
                 <Plasma color="#1967e7" speed={1.5} scale={1.3} />
             </div>
             <section className="pricing-section">
 
-                <h2 className="everything-heading pricing-header">Transparent pricing for everyone</h2>
+                <h2 className="text-center text-[2rem] font-bold text-white mb-12 pricing-header">Transparent pricing for everyone</h2>
                 <p className="pricing-subtext">Whether you are an indie hacker or a large enterprise, we have a plan for you.</p>
 
                 <div className="price-row pricing-page-row">
@@ -23,11 +23,11 @@ export default function PricingPage() {
                         </div>
 
                         <div className="list pricing-page-list">
-                            <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> 5 Active projects</p>
-                            <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> Basic UI components</p>
-                            <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> Community forum support</p>
-                            <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> 1GB Cloud storage</p>
-                            <p><i className="fa-solid fa-check" style={{ color: 'rgb(99, 230, 190)' }}></i> Standard API access</p>
+                            <p><i className="fa-solid fa-check text-[#63e6be]"></i> 5 Active projects</p>
+                            <p><i className="fa-solid fa-check text-[#63e6be]"></i> Basic UI components</p>
+                            <p><i className="fa-solid fa-check text-[#63e6be]"></i> Community forum support</p>
+                            <p><i className="fa-solid fa-check text-[#63e6be]"></i> 1GB Cloud storage</p>
+                            <p><i className="fa-solid fa-check text-[#63e6be]"></i> Standard API access</p>
                         </div>
 
                         <button className="buy starter starterbtn buy-large">
@@ -44,13 +44,13 @@ export default function PricingPage() {
                         </div>
 
                         <div className="list pricing-page-list">
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Unlimited Projects</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Premium UI animations</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> 24-hour priority support</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> 50GB Cloud storage</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Custom domain integration</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Advanced performance analytics</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#534ab7' }}></i> Remove Nexify branding</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> Unlimited Projects</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> Premium UI animations</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> 24-hour priority support</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> 50GB Cloud storage</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> Custom domain integration</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> Advanced performance analytics</p>
+                            <p><i className="fa-solid fa-check text-[#534ab7]"></i> Remove Nexify branding</p>
                         </div>
 
                         <button className="buy probtn buy-large">
@@ -66,12 +66,12 @@ export default function PricingPage() {
                         </div>
 
                         <div className="list pricing-page-list">
-                            <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> Everything in Pro</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> Custom component design</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> 99.99% SLA guarantee</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> Dedicated account manager</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> Unlimited Cloud storage</p>
-                            <p><i className="fa-solid fa-check" style={{ color: '#d85a30' }}></i> SSO & Advanced Security</p>
+                            <p><i className="fa-solid fa-check text-[#d85a30]"></i> Everything in Pro</p>
+                            <p><i className="fa-solid fa-check text-[#d85a30]"></i> Custom component design</p>
+                            <p><i className="fa-solid fa-check text-[#d85a30]"></i> 99.99% SLA guarantee</p>
+                            <p><i className="fa-solid fa-check text-[#d85a30]"></i> Dedicated account manager</p>
+                            <p><i className="fa-solid fa-check text-[#d85a30]"></i> Unlimited Cloud storage</p>
+                            <p><i className="fa-solid fa-check text-[#d85a30]"></i> SSO & Advanced Security</p>
                         </div>
 
                         <button className="buy enterprise enterprisebtn buy-large">
